@@ -41,7 +41,7 @@ let g:syntastic_rust_checkers = ['cargo']
 let g:rustfmt_autosave = 1
 
 " Initialize plugin system
-call plug#begin('/home/shalzz/.local/share/nvim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'vim-syntastic/syntastic'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --js-completer --rust-completer' }
