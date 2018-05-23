@@ -6,3 +6,7 @@ inoremap <silent><expr> <TAB>
                 let col = col('.') - 1
                 return !col || getline('.')[col - 1]  =~ '\s'
                 endfunction"}}}
+
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
