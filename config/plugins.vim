@@ -13,6 +13,11 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+" (Optional) Multi-entry selection UI.
+Plug 'junegunn/fzf'
+
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 
 " RUST
 Plug 'rust-lang/rust.vim'
