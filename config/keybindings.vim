@@ -26,7 +26,12 @@ map <C-b> :NERDTreeToggle<CR>
 " move between buffers
 map J <Esc>:bprev<CR>
 map K <Esc>:bnext<CR>
+map X <Esc>:bdelete<CR>
 
 " switch to left / right split (mostly for Nerd Tree)
 map H <C-W>h
 map L <C-W>l
+
+" switch between tabs
+map <C-h> <Esc>:tabprev<CR>
+map <C-l> <Esc>:tabnext<CR>

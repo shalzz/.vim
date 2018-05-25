@@ -18,3 +18,6 @@ filetype indent on " file type based indentation
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
 let g:rustfmt_autosave = 1
+
+set noruler
+set noshowmode
