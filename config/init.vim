@@ -1,4 +1,4 @@
-set number
+set number " show line numbers
 set clipboard+=unnamedplus
 "" Four space wide tab
 "set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4

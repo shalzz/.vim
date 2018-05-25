@@ -4,6 +4,7 @@ Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/promptline.vim'
+Plug 'scrooloose/nerdtree'
 
 " C/C++
 if has('nvim')
