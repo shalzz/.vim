@@ -7,6 +7,7 @@ Plug 'edkolev/promptline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'aradunovic/perun.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
 
 " C/C++
 if has('nvim')

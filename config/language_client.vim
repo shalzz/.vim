@@ -15,7 +15,7 @@ set formatexpr=LanguageClient_textDocument_rangeFormatting()
 
 function! MyLanguageClient_statusLine(...) abort
     if exists('g:LanguageClient_serverStatus')
-        let w:airline_section_b = join(split(g:LanguageClient_serverStatusMessage)[1:], ' ')
+        let w:airline_section_statistics = join(split(g:LanguageClient_serverStatusMessage)[1:], ' ')
     endif
     return
 endfunction
