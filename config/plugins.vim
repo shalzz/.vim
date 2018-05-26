@@ -18,9 +18,6 @@ endif
 " (Optional) Multi-entry selection UI.
 Plug 'junegunn/fzf'
 
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
-
 " RUST
 Plug 'rust-lang/rust.vim'
 Plug 'sebastianmarkow/deoplete-rust'

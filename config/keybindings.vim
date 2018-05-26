@@ -7,18 +7,12 @@ inoremap <silent><expr> <TAB>
                 return !col || getline('.')[col - 1]  =~ '\s'
                 endfunction"}}}
 
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-            \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 nnoremap <silent> <C-k> :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> gr :call LanguageClient#textDocument_references()<CR>
 nnoremap <silent> gs :call LanguageClient#textDocument_documentSymbol()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
-
-imap <C-n> <Plug>(neosnippet_expand_or_jump)
-smap <C-n> <Plug>(neosnippet_expand_or_jump)
-xmap <C-n> <Plug>(neosnippet_expand_target)
 
 " Nerd Tree toggling
 map <C-b> :NERDTreeToggle<CR>
