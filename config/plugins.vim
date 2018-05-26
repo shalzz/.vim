@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/promptline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'aradunovic/perun.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " C/C++
 if has('nvim')

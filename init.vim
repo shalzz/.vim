@@ -5,3 +5,4 @@ source $HOME/.config/nvim/config/deoplete.vim
 source $HOME/.config/nvim/config/language_client.vim
 source $HOME/.config/nvim/config/keybindings.vim
 source $HOME/.config/nvim/config/nerdtree.vim
+source $HOME/.config/nvim/config/ctrlp.vim

@@ -29,3 +29,7 @@ map L <C-W>l
 " switch between tabs
 map <C-h> <Esc>:tabprev<CR>
 map <C-l> <Esc>:tabnext<CR>
+
+" ctrl-p plugin shortcut
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
