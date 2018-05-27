@@ -8,6 +8,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'aradunovic/perun.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'edkolev/tmuxline.vim'
 
 " C/C++
 if has('nvim')
