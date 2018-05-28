@@ -1,3 +1,9 @@
+" This comes first, because we have mappings that depend on leader
+" With a map leader it's possible to do extra key combinations
+" i.e: <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
+
 inoremap <silent><expr> <TAB>
                 \ pumvisible() ? "\<C-n>" :
                 \ <SID>check_back_space() ? "\<TAB>" :
@@ -8,11 +14,18 @@ inoremap <silent><expr> <TAB>
                 endfunction"}}}
 
 
+" ==================== LanguageClient ====================
 nnoremap <silent> <C-k> :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> gr :call LanguageClient#textDocument_references()<CR>
 nnoremap <silent> gs :call LanguageClient#textDocument_documentSymbol()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
+" ==================== Fugitive ====================
+nnoremap <leader>ga :Git add %:p<CR><CR>
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gp :Gpush<CR>
+vnoremap <leader>gb :Gblame<CR>
 
 " Nerd Tree toggling
 map <C-b> :NERDTreeToggle<CR>
@@ -33,3 +46,20 @@ map <C-l> <Esc>:tabnext<CR>
 " ctrl-p plugin shortcut
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" CTRL-U in insert mode deletes a lot.	Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+inoremap <C-U> <C-G>u<C-U>
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+" Do not show stupid q: window
+map q: :q
+
+" sometimes this happens and I hate it
+map :Vs :vs
+map :Sp :sp
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %

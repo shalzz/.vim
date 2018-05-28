@@ -4,6 +4,11 @@ let g:deoplete#enable_smart_case = 1
 call deoplete#custom#source('_',
             \ 'disabled_syntaxes', ['Comment', 'String'])
 
+let g:deoplete#ignore_sources = {}
+let g:deoplete#ignore_sources._ = ['buffer', 'member', 'tag', 'file', 'neosnippet']
+let g:deoplete#sources#go#sort_class = ['func', 'type', 'var', 'const']
+let g:deoplete#sources#go#align_class = 1
+
 " set sources
 let g:deoplete#sources = {}
 let g:deoplete#sources.c = ['LanguageClient']
