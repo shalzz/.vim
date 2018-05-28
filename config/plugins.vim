@@ -3,7 +3,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/promptline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'aradunovic/perun.vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -19,8 +18,6 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-" (Optional) Multi-entry selection UI.
-Plug 'junegunn/fzf'
 
 " RUST
 Plug 'rust-lang/rust.vim'
