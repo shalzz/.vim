@@ -4,7 +4,7 @@ set backspace=indent,eol,start  " Makes backspace key more powerful.
 set showcmd                     " Show me what I'm typing
 
 set noswapfile                  " Don't use swapfile
-set nobackup					          " Don't create annoying backup files
+set nobackup                    " Don't create annoying backup files
 set nowritebackup
 set splitright                  " Split vertical windows right to the current windows
 set splitbelow                  " Split horizontal windows below to the current windows
@@ -23,7 +23,6 @@ set incsearch                   " Shows the match while typing
 set hlsearch                    " Highlight found searches
 set ignorecase                  " Search case insensitive...
 set smartcase                   " ... but not when search pattern contains upper case characters
-set ttyfast
 
 set spell spelllang=en           " enable spellcheck
 
@@ -48,7 +47,6 @@ filetype indent on " file type based indentation
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
 let g:rustfmt_autosave = 1
-
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')

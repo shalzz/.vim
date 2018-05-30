@@ -9,6 +9,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-obsession'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 " C/C++
 if has('nvim')
