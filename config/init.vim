@@ -35,8 +35,10 @@ set smarttab
 
 let &titlestring=expand("%:p")  " file name in terminal title
 set title
-colorscheme perun
 set termguicolors               " True color support
+colorscheme monokai
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
 
 "" Enable filetype detection:
 filetype on

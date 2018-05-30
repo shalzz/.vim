@@ -4,12 +4,15 @@ Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'aradunovic/perun.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-obsession'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+
+" Color Schemes
+Plug 'aradunovic/perun.vim'
+Plug 'crusoexia/vim-monokai'
 
 " C/C++
 if has('nvim')
@@ -20,6 +23,7 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'majutsushi/tagbar'
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 " RUST
 Plug 'rust-lang/rust.vim'
