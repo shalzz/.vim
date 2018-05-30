@@ -1,5 +1,5 @@
 {
     "initializationOptions": {
-            "cacheDirectory": "$HOME/.cache/cquery"
+            "cacheDirectory": "/home/shalzz/.cache/cquery"
     }
 }
