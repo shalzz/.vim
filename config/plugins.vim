@@ -18,6 +18,7 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+Plug 'majutsushi/tagbar'
 
 " RUST
 Plug 'rust-lang/rust.vim'

@@ -27,6 +27,9 @@ nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gp :Gpush<CR>
 vnoremap <leader>gb :Gblame<CR>
 
+" ==================== Tagbar ====================
+nmap <F8> :TagbarToggle<CR>
+
 " Nerd Tree toggling
 map <C-b> :NERDTreeToggle<CR>
 
