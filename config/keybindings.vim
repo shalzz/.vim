@@ -28,15 +28,15 @@ nnoremap <leader>gp :Gpush<CR>
 vnoremap <leader>gb :Gblame<CR>
 
 " ==================== Tagbar ====================
-nmap <F8> :TagbarToggle<CR>
+nmap <C-b> :TagbarToggle<CR>
 
 " Nerd Tree toggling
-map <C-b> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 " move between buffers
 map J <Esc>:bprev<CR>
 map K <Esc>:bnext<CR>
-map X <Esc>:bdelete<CR>
+map X <Esc>:BD<CR>
 
 " switch to left / right split (mostly for Nerd Tree)
 map H <C-W>h

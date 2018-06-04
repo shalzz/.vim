@@ -9,6 +9,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-obsession'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'qpkorr/vim-bufkill'
 
 " Color Schemes
 Plug 'aradunovic/perun.vim'
