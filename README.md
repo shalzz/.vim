@@ -8,6 +8,7 @@ Just run the following commands via terminal to get perfectly set up:
 ```console
 $ cd ~/
 $ git clone https://github.com/shalzz/.vim.git
+$ cd "${HOME}/.vim"
 $ make install-nvim  # for Neovim
     or
 $ make install-vim
