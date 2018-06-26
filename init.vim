@@ -7,3 +7,4 @@ source $HOME/.config/nvim/config/keybindings.vim
 source $HOME/.config/nvim/config/nerdtree.vim
 source $HOME/.config/nvim/config/ctrlp.vim
 source $HOME/.config/nvim/config/cpp-highlight.vim
+source $HOME/.config/nvim/config/markdown.vim
