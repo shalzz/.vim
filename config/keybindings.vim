@@ -15,7 +15,7 @@ inoremap <silent><expr> <TAB>
 
 
 " ==================== LanguageClient ====================
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gh :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> gr :call LanguageClient#textDocument_references()<CR>
 nnoremap <silent> gs :call LanguageClient#textDocument_documentSymbol()<CR>
