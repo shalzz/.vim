@@ -11,4 +11,4 @@ install-nvim: common
 	ln -sf ${ROOT_DIR}/autoload/ ~/.local/share/nvim/site/
 
 install-vim: common
-	ln -s ${ROOT_DIR}/init.vim ~/.vim/.vimrc
+	ln -s ${ROOT_DIR}/init.vim ~/.vimrc
