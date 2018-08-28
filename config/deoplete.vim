@@ -14,6 +14,8 @@ let g:deoplete#sources = {}
 let g:deoplete#sources.c = ['LanguageClient']
 let g:deoplete#sources.cpp = ['LanguageClient']
 let g:deoplete#sources.rust = ['LanguageClient']
+let g:deoplete#sources.javascript = ['LanguageClient']
+let g:deoplete#sources.typescript = ['LanguageClient']
 let g:deoplete#sources.vim = ['vim']
 
 " deoplete-racer config

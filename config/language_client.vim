@@ -2,9 +2,12 @@
 set hidden
 
 let g:LanguageClient_serverCommands = {
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-    \ 'cpp': ['cquery', '--log-file=/tmp/cq.log', '--init={"index": {"comments": 2}}'],
     \ 'c': ['cquery', '--log-file=/tmp/cq.log', '--init={"index": {"comments": 2}}'],
+    \ 'cpp': ['cquery', '--log-file=/tmp/cq.log', '--init={"index": {"comments": 2}}'],
+    \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'javascript.jsx': ['javascript-typescript-stdio'],
+    \ 'typescript': ['javascript-typescript-stdio'],
+    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
     \ }
 
 let g:LanguageClient_autoStart = 1
