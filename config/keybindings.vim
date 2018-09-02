@@ -50,6 +50,13 @@ map <C-l> <Esc>:tabnext<CR>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" Jump to start and end of line using the home row keys
+map H ^
+map L $
+
+" <leader><leader> toggles between buffers
+nnoremap <leader><leader> <c-^>
+
 " CTRL-U in insert mode deletes a lot.	Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
