@@ -26,6 +26,10 @@ set smartcase                   " ... but not when search pattern contains upper
 
 set spell spelllang=en          " enable spellcheck
 
+"" Permanent Undo
+set undodir=~/.vimdid
+set undofile
+
 "" Tab as four spaces
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4
 set autoindent
