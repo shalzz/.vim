@@ -16,6 +16,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'aradunovic/perun.vim'
 Plug 'crusoexia/vim-monokai'
 
+Plug 'w0rp/ale'
+
 " C/C++
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
