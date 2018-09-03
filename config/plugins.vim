@@ -18,14 +18,14 @@ Plug 'crusoexia/vim-monokai'
 
 Plug 'w0rp/ale'
 
+" Completion plugins
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-tmux'
+Plug 'ncm2/ncm2-path'
+
 " C/C++
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
 Plug 'majutsushi/tagbar'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
@@ -34,7 +34,6 @@ Plug 'plasticboy/vim-markdown'
 
 " RUST
 Plug 'rust-lang/rust.vim'
-Plug 'sebastianmarkow/deoplete-rust'
 
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
