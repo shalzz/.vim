@@ -1,6 +1,7 @@
 " Fixer
 let g:ale_fixers = {'javascript': ['prettier', 'eslint']}
 let g:ale_fixers = {'jsx': ['prettier', 'eslint']}
+let g:ale_fixers = {'rust': ['rustfmt']}
 
 " Linter
 let g:ale_sign_column_always = 1
@@ -12,6 +13,7 @@ let g:ale_rust_cargo_use_check = 1
 let g:ale_rust_cargo_check_all_targets = 1
 let g:ale_linters = {'c': ['cquery', 'clangtidy']}
 let g:ale_linters = {'cpp': ['cquery']}
+let g:ale_linter = {'rust': ['cargo clippy']}
 
 " Echo format
 let g:ale_echo_msg_error_str = 'E'
