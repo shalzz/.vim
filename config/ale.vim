@@ -1,6 +1,8 @@
 " Fixer
 let g:ale_fixers = {'javascript': ['prettier', 'eslint']}
 let g:ale_fixers = {'jsx': ['prettier', 'eslint']}
+let g:ale_fixers = {'c': ['clangformat']}
+let g:ale_fixers = {'cpp': ['clangformat']}
 let g:ale_fixers = {'rust': ['rustfmt']}
 
 " Linter
