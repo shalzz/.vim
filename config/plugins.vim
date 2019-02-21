@@ -12,6 +12,7 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'qpkorr/vim-bufkill'
 Plug 'sheerun/vim-polyglot'
 Plug 'westeri/asl-vim'
+Plug 'sgur/vim-editorconfig'
 
 " Color Schemes
 Plug 'aradunovic/perun.vim'
