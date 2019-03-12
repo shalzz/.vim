@@ -13,6 +13,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'sheerun/vim-polyglot'
 Plug 'westeri/asl-vim'
 Plug 'sgur/vim-editorconfig'
+Plug 'iCyMind/NeoSolarized'
 
 " Color Schemes
 Plug 'aradunovic/perun.vim'
