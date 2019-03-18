@@ -40,7 +40,8 @@ set smarttab
 let &titlestring=expand("%:p")  " file name in terminal title
 set title
 set termguicolors               " True color support
-colorscheme monokai
+set background=light
+colorscheme NeoSolarized
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
 
