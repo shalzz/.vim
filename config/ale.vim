@@ -1,9 +1,11 @@
 " Fixer
-let g:ale_fixers = {'javascript': ['prettier', 'eslint']}
-let g:ale_fixers = {'jsx': ['prettier', 'eslint']}
-let g:ale_fixers = {'c': ['clangformat']}
-let g:ale_fixers = {'cpp': ['clangformat']}
-let g:ale_fixers = {'rust': ['rustfmt']}
+let g:ale_fixers = {
+\    'javascript': ['prettier', 'eslint'],
+\    'jsx': ['prettier', 'eslint'],
+\    'c': ['clangformat'],
+\    'cpp': ['clangformat'],
+\    'rust': ['rustfmt']
+\}
 
 " Linter
 let g:ale_sign_column_always = 1
@@ -11,9 +13,11 @@ let g:ale_sign_column_always = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_enter = 0
-let g:ale_linters = {'c': ['cquery', 'clangtidy']}
-let g:ale_linters = {'cpp': ['cquery']}
-let g:ale_linter = {'rust': ['cargo']}
+let g:ale_linters = {
+\       'c': ['cquery', 'clangtidy'],
+\       'cpp': ['cquery'],
+\       'rust': ['cargo'],
+\}
 
 " Echo format
 let g:ale_echo_msg_error_str = 'E'
