@@ -4,7 +4,8 @@ let g:ale_fixers = {
 \    'jsx': ['prettier', 'eslint'],
 \    'c': ['clangformat'],
 \    'cpp': ['clangformat'],
-\    'rust': ['rustfmt']
+\    'rust': ['rustfmt'],
+\    'solidity': ['solium --fix -'],
 \}
 
 " Linter
@@ -17,6 +18,7 @@ let g:ale_linters = {
 \       'c': ['cquery', 'clangtidy'],
 \       'cpp': ['cquery'],
 \       'rust': ['cargo'],
+\       'solidity': ['solium -'],
 \}
 
 " Echo format
