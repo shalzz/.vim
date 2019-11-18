@@ -1,5 +1,6 @@
 " Fixer
 let g:ale_fixers = {
+\    'typescript': ['prettier', 'eslint'],
 \    'javascript': ['prettier', 'eslint'],
 \    'jsx': ['prettier', 'eslint'],
 \    'c': ['clangformat'],
