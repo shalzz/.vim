@@ -28,6 +28,9 @@ map <C-j> <Esc>:bprev<CR>
 map <C-k> <Esc>:bnext<CR>
 map X <Esc>:BD<CR>
 
+" shortcut for ESC
+map <M-f> <Esc>
+
 " switch to left / right split (mostly for Nerd Tree)
 "map <C-h> <C-W>h
 "map <C-l> <C-W>l
