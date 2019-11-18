@@ -40,7 +40,7 @@ set smarttab
 let &titlestring=expand("%:p")  " file name in terminal title
 set title
 set termguicolors               " True color support
-set background=light
+set background=dark
 colorscheme NeoSolarized
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
@@ -53,7 +53,7 @@ filetype indent on " file type based indentation
 "" Use actual tab characters in Makefile
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
-let g:rustfmt_autosave = 0
+let g:rustfmt_autosave = 1
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
