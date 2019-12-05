@@ -3,8 +3,8 @@ let g:ale_fixers = {
 \    'typescript': ['prettier', 'eslint'],
 \    'javascript': ['prettier', 'eslint'],
 \    'jsx': ['prettier', 'eslint'],
-\    'c': ['clangformat'],
-\    'cpp': ['clangformat'],
+\    'c': ['clang-format'],
+\    'cpp': ['clang-format'],
 \    'rust': ['rustfmt'],
 \    'solidity': ['solium --fix -'],
 \}
