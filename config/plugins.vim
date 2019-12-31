@@ -34,6 +34,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 " RUST
 Plug 'rust-lang/rust.vim'

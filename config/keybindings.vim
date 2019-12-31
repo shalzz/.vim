@@ -28,6 +28,10 @@ map <C-j> <Esc>:bprev<CR>
 map <C-k> <Esc>:bnext<CR>
 map X <Esc>:BD<CR>
 
+" I can type :help on my own, thanks.
+map <F1> <Esc>
+imap <F1> <Esc>
+
 " shortcut for ESC
 map <M-f> <Esc>
 
