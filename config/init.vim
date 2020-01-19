@@ -54,6 +54,7 @@ filetype indent on " file type based indentation
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
 let g:rustfmt_autosave = 1
+let g:rustfmt_options = '--edition 2018'
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')

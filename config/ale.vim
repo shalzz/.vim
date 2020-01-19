@@ -1,11 +1,12 @@
 " Fixer
 let g:ale_fixers = {
 \    'typescript': ['prettier', 'eslint'],
+\    'typescript.tsx': ['prettier', 'eslint'],
 \    'javascript': ['prettier', 'eslint'],
 \    'jsx': ['prettier', 'eslint'],
 \    'c': ['clang-format'],
 \    'cpp': ['clang-format'],
-\    'rust': ['rustfmt'],
+\    'rust': ['rustfmt --edition 2018'],
 \    'solidity': ['solium --fix -'],
 \}
 
