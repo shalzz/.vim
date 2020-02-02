@@ -11,9 +11,13 @@ let g:LanguageClient_serverCommands = {
     \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
     \ }
 
+"let g:LanguageClient_loggingLevel = 'DEBUG'
+"let g:LanguageClient_loggingFile = $HOME.'/.vim/LanguageClient.log'
+
 let g:LanguageClient_autoStart = 1
 let g:LanguageClient_loadSettings = 1
 let g:LanguageClient_settingsPath = $HOME.'/.config/nvim/settings.json'
+
 set completefunc=LanguageClient#complete
 set formatexpr=LanguageClient_textDocument_rangeFormatting()
 
@@ -24,6 +28,3 @@ function! MyLanguageClient_statusLine(...) abort
     return
 endfunction
 call airline#add_statusline_func('MyLanguageClient_statusLine')
-
-"    \ 'javascript': ['javascript-typescript-stdio'],
-"    \ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
