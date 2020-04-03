@@ -40,10 +40,15 @@ set smarttab
 let &titlestring=expand("%:p")  " file name in terminal title
 set title
 set termguicolors               " True color support
-set background=dark
 colorscheme NeoSolarized
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
+
+if (match(system("yq r ~/.config/alacritty/alacritty.yml colors.primary"), "*dark") != -1)
+    set background=dark
+else
+    set background=light
+endif
 
 "" Enable filetype detection:
 filetype on
