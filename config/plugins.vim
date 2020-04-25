@@ -17,7 +17,7 @@ Plug 'iCyMind/NeoSolarized'
 
 " Color Schemes
 Plug 'aradunovic/perun.vim'
-Plug 'crusoexia/vim-monokai'
+Plug 'shalzz/vim-monokai'
 
 Plug 'w0rp/ale'
 
