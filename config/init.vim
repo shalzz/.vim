@@ -44,7 +44,7 @@ colorscheme NeoSolarized
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
 
-if (match(system("yq r ~/.config/alacritty/alacritty.yml colors.primary"), "*dark") != -1)
+if (match(system("yq r /home/shalzz/.config/alacritty/alacritty.yml colors.primary"), "*dark") != -1)
     set background=dark
 else
     set background=light
