@@ -28,6 +28,9 @@ map <C-j> <Esc>:bprev<CR>
 map <C-k> <Esc>:bnext<CR>
 map X <Esc>:BD<CR>
 
+" Unbind some useless/annoying default key bindings.
+nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
+
 " I can type :help on my own, thanks.
 map <F1> <Esc>
 imap <F1> <Esc>

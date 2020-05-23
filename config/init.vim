@@ -18,9 +18,6 @@ set autoread                    " Automatically reread changed files without ask
 set number                      " show line numbers
 set clipboard+=unnamedplus
 
-" Unbind some useless/annoying default key bindings.
-nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
-
 au FocusLost * :wa              " Set vim to save the file on focus out.
 
 set fileformats=unix,dos,mac    " Prefer Unix over Windows over OS 9 formats
