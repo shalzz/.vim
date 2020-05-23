@@ -1,7 +1,11 @@
+set nocompatible                " Disable vi compatibility
 set noerrorbells                " No beeps
+set visualbell t_vb=            " Allow visual bell though
 set number                      " Show line numbers
+set relativenumber              " Use relative numbering
 set backspace=indent,eol,start  " Makes backspace key more powerful.
 set showcmd                     " Show me what I'm typing
+syntax on                       " Turn on syntax highlighting.
 
 set noswapfile                  " Don't use swapfile
 set nobackup                    " Don't create annoying backup files
@@ -13,6 +17,9 @@ set autowrite                   " Automatically save before :next, :make etc.
 set autoread                    " Automatically reread changed files without asking me anything
 set number                      " show line numbers
 set clipboard+=unnamedplus
+
+" Unbind some useless/annoying default key bindings.
+nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
 au FocusLost * :wa              " Set vim to save the file on focus out.
 
