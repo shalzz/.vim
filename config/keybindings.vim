@@ -24,9 +24,13 @@ nmap <C-b> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 " move between buffers
-map <C-j> <Esc>:bprev<CR>
-map <C-k> <Esc>:bnext<CR>
+nnoremap <C-h> <Esc>:bprev<CR>
+nnoremap <C-l> <Esc>:bnext<CR>
 map X <Esc>:BD<CR>
+
+" Move Down/up a Page
+map <C-j> <Esc><PageDown>
+map <C-k> <Esc><PageUp>
 
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
@@ -41,10 +45,6 @@ map <M-f> <Esc>
 " switch to left / right split (mostly for Nerd Tree)
 "map <C-h> <C-W>h
 "map <C-l> <C-W>l
-
-" switch between tabs
-map <C-h> <Esc>:tabprev<CR>
-map <C-l> <Esc>:tabnext<CR>
 
 " ctrl-p plugin shortcut
 let g:ctrlp_map = '<c-p>'
