@@ -7,7 +7,7 @@ let g:ale_fixers = {
 \    'c': ['clang-format'],
 \    'cpp': ['clang-format'],
 \    'rust': ['rustfmt --edition 2018'],
-\    'solidity': ['solium --fix -'],
+\    'solidity': ['npx prettier'],
 \}
 
 " Linter

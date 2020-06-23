@@ -8,9 +8,10 @@ let g:LanguageClient_serverCommands = {
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
     \ 'typescript.tsx': ['javascript-typescript-stdio'],
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+    \ 'rust': ['rust-analyzer'],
     \ }
 
+" \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
 "let g:LanguageClient_loggingLevel = 'DEBUG'
 "let g:LanguageClient_loggingFile = $HOME.'/.vim/LanguageClient.log'
 

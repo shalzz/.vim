@@ -39,6 +39,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 " RUST
 Plug 'rust-lang/rust.vim'
 
+" Solidity
+Plug 'TovarishFin/vim-solidity'
+
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
