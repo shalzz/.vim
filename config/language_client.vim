@@ -8,6 +8,7 @@ let g:LanguageClient_serverCommands = {
     \ 'javascript.jsx': ['javascript-typescript-stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
     \ 'typescript.tsx': ['javascript-typescript-stdio'],
+    \ 'typescriptreact': ['javascript-typescript-stdio'],
     \ 'rust': ['rust-analyzer'],
     \ }
 

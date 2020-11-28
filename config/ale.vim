@@ -2,12 +2,13 @@
 let g:ale_fixers = {
 \    'typescript': ['prettier', 'eslint'],
 \    'typescript.tsx': ['prettier', 'eslint'],
+\    'typescriptreact': ['prettier', 'eslint'],
 \    'javascript': ['prettier', 'eslint'],
 \    'jsx': ['prettier', 'eslint'],
 \    'c': ['clang-format'],
 \    'cpp': ['clang-format'],
-\    'rust': ['rustfmt --edition 2018'],
-\    'solidity': ['npx prettier'],
+\    'rust': ['rustfmt'],
+\    'solidity': ['prettier'],
 \}
 
 " Linter
@@ -17,10 +18,15 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
-\       'c': ['cquery', 'clangtidy'],
-\       'cpp': ['cquery'],
-\       'rust': ['cargo'],
-\       'solidity': ['solium -'],
+\    'typescript': ['prettier', 'eslint'],
+\    'typescript.tsx': ['prettier', 'eslint'],
+\    'typescriptreact': ['prettier', 'eslint'],
+\    'javascript': ['prettier', 'eslint'],
+\    'jsx': ['prettier', 'eslint'],
+\    'c': ['cquery', 'clangtidy'],
+\    'cpp': ['cquery'],
+\    'rust': ['cargo'],
+\    'solidity': ['prettier'],
 \}
 
 " Echo format
