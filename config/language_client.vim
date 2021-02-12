@@ -2,8 +2,8 @@
 set hidden
 
 let g:LanguageClient_serverCommands = {
-    \ 'c': ['cquery', '--log-file=/tmp/cq.log', '--init={"index": {"comments": 2}}'],
-    \ 'cpp': ['cquery', '--log-file=/tmp/cq.log', '--init={"index": {"comments": 2}}'],
+    \ 'c': ['clangd', '--clang-tidy'],
+    \ 'cpp': ['clangd', '--clang-tidy'],
     \ 'javascript': ['typescript-language-server', '--stdio'],
     \ 'javascript.jsx': ['typescript-language-server', '--stdio'],
     \ 'typescript': ['typescript-language-server', '--stdio'],
