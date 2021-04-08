@@ -8,7 +8,6 @@ let g:ale_fixers = {
 \    'c': ['clang-format'],
 \    'cpp': ['clang-format'],
 \    'rust': ['rustfmt'],
-\    'solidity': ['prettier'],
 \}
 
 " Linter
@@ -26,7 +25,6 @@ let g:ale_linters = {
 \    'c': ['cquery', 'clangtidy'],
 \    'cpp': ['cquery'],
 \    'rust': ['cargo'],
-\    'solidity': ['prettier'],
 \}
 
 " Echo format
