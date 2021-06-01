@@ -1,5 +1,8 @@
 {
     "initializationOptions": {
-            "cacheDirectory": "/home/shalzz/.cache/cquery"
+            "cacheDirectory": "/home/shalzz/.cache/cquery",
+            "enable": true,
+            "lint": true,
+            "unstable": false
     }
 }

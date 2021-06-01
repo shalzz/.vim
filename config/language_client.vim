@@ -4,11 +4,11 @@ set hidden
 let g:LanguageClient_serverCommands = {
     \ 'c': ['clangd', '--clang-tidy'],
     \ 'cpp': ['clangd', '--clang-tidy'],
-    \ 'javascript': ['typescript-language-server', '--stdio'],
-    \ 'javascript.jsx': ['typescript-language-server', '--stdio'],
-    \ 'typescript': ['typescript-language-server', '--stdio'],
-    \ 'typescript.tsx': ['typescript-language-server', '--stdio'],
-    \ 'typescriptreact': ['typescript-language-server', '--stdio'],
+    \ 'javascript': ['deno', 'lsp'],
+    \ 'javascript.jsx': ['deno', 'lsp'],
+    \ 'typescript': ['deno', 'lsp'],
+    \ 'typescript.tsx': ['deno', 'lsp'],
+    \ 'typescriptreact': ['deno', 'lsp'],
     \ 'rust': ['rust-analyzer'],
     \ }
 
