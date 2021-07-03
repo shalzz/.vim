@@ -22,14 +22,7 @@ Plug 'iCyMind/NeoSolarized'
 " Neovim 0.5+ specific
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'neovim/nvim-lspconfig'
-
-" Completion plugins
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-tmux'
-Plug 'ncm2/ncm2-path'
-Plug 'w0rp/ale'
+Plug 'hrsh7th/nvim-compe'
 
 " File search
 Plug 'scrooloose/nerdtree'
