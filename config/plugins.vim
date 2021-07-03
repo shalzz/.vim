@@ -1,5 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Decoration and Behaviour
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -10,14 +11,16 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-obsession'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'qpkorr/vim-bufkill'
+
 Plug 'westeri/asl-vim'
 Plug 'sgur/vim-editorconfig'
-Plug 'iCyMind/NeoSolarized'
 
 " Color Schemes
 Plug 'aradunovic/perun.vim'
+Plug 'iCyMind/NeoSolarized'
 
-Plug 'w0rp/ale'
+" Neovim 0.5+ specific
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 " Completion plugins
 Plug 'ncm2/ncm2'
@@ -25,6 +28,7 @@ Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-tmux'
 Plug 'ncm2/ncm2-path'
+Plug 'w0rp/ale'
 
 " C/C++
 Plug 'majutsushi/tagbar'
