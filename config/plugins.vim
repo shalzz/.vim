@@ -42,6 +42,7 @@ Plug 'rust-lang/rust.vim'
 
 " Solidity
 Plug 'quilt/vim-etk', { 'branch': 'main' }
+Plug 'TovarishFin/vim-solidity'
 
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',

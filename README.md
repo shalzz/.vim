@@ -5,7 +5,7 @@ My vim dot files.
 
 Just run the following commands via terminal to get perfectly set up:
 
-```console
+```bash
 $ cd ~/
 $ git clone https://github.com/shalzz/.vim.git
 $ cd "${HOME}/.vim"
