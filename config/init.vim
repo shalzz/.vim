@@ -45,8 +45,6 @@ let &titlestring=expand("%:p")  " file name in terminal title
 set title
 set termguicolors               " True color support
 colorscheme NeoSolarized
-let g:monokai_term_italic = 1
-let g:monokai_gui_italic = 1
 
 if (system("grep -c *dark /home/shalzz/.config/alacritty/alacritty.yml") == 1)
     set background=dark
