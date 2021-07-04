@@ -8,7 +8,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'majutsushi/tagbar'
 Plug 'sgur/vim-editorconfig'
 
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive' " Git support
 Plug 'tpope/vim-obsession'
 Plug 'westeri/asl-vim'
 
@@ -25,8 +25,9 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 
 " File search
-Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " RUST
 Plug 'rust-lang/rust.vim'

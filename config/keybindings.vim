@@ -13,9 +13,6 @@ vnoremap <leader>gb :Gblame<CR>
 " ==================== Tagbar ====================
 nmap <C-b> :TagbarToggle<CR>
 
-" Nerd Tree toggling
-map <C-n> :NERDTreeToggle<CR>
-
 " move between buffers
 nnoremap <C-h> <Esc>:bprev<CR>
 nnoremap <C-l> <Esc>:bnext<CR>
@@ -34,14 +31,6 @@ imap <F1> <Esc>
 
 " shortcut for ESC
 map <M-f> <Esc>
-
-" switch to left / right split (mostly for Nerd Tree)
-"map <C-h> <C-W>h
-"map <C-l> <C-W>l
-
-" ctrl-p plugin shortcut
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 
 " Jump to start and end of line using the home row keys
 map H ^
