@@ -6,9 +6,9 @@ let g:mapleader = "\<Space>"
 
 " ==================== Fugitive ====================
 nnoremap <leader>ga :Git add %:p<CR><CR>
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gp :Gpush<CR>
-vnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gs :Git Status<CR>
+nnoremap <leader>gp :Git Push<CR>
+vnoremap <leader>gb :Git Blame<CR>
 
 " ==================== Tagbar ====================
 nmap <C-b> :TagbarToggle<CR>

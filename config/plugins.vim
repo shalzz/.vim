@@ -14,7 +14,7 @@ Plug 'westeri/asl-vim'
 
 " Tmux
 Plug 'edkolev/tmuxline.vim'
-Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'andersevenrud/compe-tmux'
 
 " Color Schemes
 Plug 'iCyMind/NeoSolarized'
