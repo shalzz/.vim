@@ -9,6 +9,7 @@ source $HOME/.config/nvim/config/treesitter.vim
 source $HOME/.config/nvim/config/lsp.vim
 source $HOME/.config/nvim/config/compe.vim
 source $HOME/.config/nvim/config/telescope.vim
+source $HOME/.config/nvim/config/nvim-tree.vim
 if filereadable("$HOME/builds/vlc/extras/analyser/vlc.vim")
     source $HOME/builds/vlc/extras/analyser/vlc.vim
 endif

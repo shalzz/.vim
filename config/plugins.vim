@@ -19,21 +19,25 @@ Plug 'andersevenrud/compe-tmux'
 " Color Schemes
 Plug 'iCyMind/NeoSolarized'
 
-" Neovim 0.5+ specific
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
-
-" File search
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-
 " RUST
 Plug 'rust-lang/rust.vim'
 
 " Solidity
 Plug 'quilt/vim-etk', { 'branch': 'main' }
 Plug 'TovarishFin/vim-solidity'
+
+" Neovim 0.5+ specific
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
+
+" Nvim tree
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+
+" File search
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
