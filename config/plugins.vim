@@ -19,12 +19,9 @@ Plug 'andersevenrud/compe-tmux'
 " Color Schemes
 Plug 'iCyMind/NeoSolarized'
 
-" RUST
-Plug 'rust-lang/rust.vim'
-
 " Solidity
 Plug 'quilt/vim-etk', { 'branch': 'main' }
-Plug 'TovarishFin/vim-solidity'
+Plug 'thesis/vim-solidity'
 
 " Neovim 0.5+ specific
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
