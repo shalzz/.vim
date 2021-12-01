@@ -12,10 +12,38 @@ vim.g.vim_tree_special_files = {
   "package-lock.json",
 }
 
-vim.g.nvim_tree_ignore = {
-  ".git",
-  ".cache",
-  "__pycache__",
+
+-- default will show icon by default if no icon is provided
+-- default shows no icon by default
+vim.g.nvim_tree_icons = {
+  default = "",
+  symlink = "",
+  git = {
+    -- unstaged    = "",
+    unstaged    = "★",
+    -- staged      = "",
+    staged      = "+",
+    unmerged    = "",
+    -- renamed     = "",
+    renamed     = "→",
+    -- untracked   = "",
+    -- deleted     = """,
+    untracked   = "?",
+    deleted     = "✗",
+    ignored     = "◌",
+  },
+  folder = {
+    arrow_open      = "▾",
+    arrow_closed    = "▸",
+    -- default         = "▸",
+    -- open            = "▾",
+    default         = "",
+    open            = "",
+    empty           = "",
+    empty_open      = "",
+    symlink         = "",
+    symlink_open    = "",
+  },
 }
 
 vim.g.nvim_tree_show_icons = {
@@ -27,24 +55,15 @@ vim.g.nvim_tree_show_icons = {
 }
 
 vim.g.nvim_tree_add_trailing = 0
-vim.g.nvim_tree_auto_close = 1
-vim.g.nvim_tree_auto_open = 0
-vim.g.nvim_tree_follow = 0
 vim.g.nvim_tree_git_hl = 1
-vim.g.nvim_tree_lsp_diagnostics = 1
-vim.g.nvim_tree_gitignore = 1
 vim.g.nvim_tree_group_empty = 0
-vim.g.nvim_tree_hide_dotfiles = 1
-vim.g.nvim_tree_highlight_opened_files = 1
 vim.g.nvim_tree_indent_markers = 1
+vim.g.nvim_tree_highlight_opened_files = 1
 vim.g.nvim_tree_root_folder_modifier = ":~"
-vim.g.nvim_tree_side = "left"
-vim.g.nvim_tree_tab_open = 0
-vim.g.nvim_tree_width = 30
 
 -- Mostly default mappings
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
-vim.g.nvim_tree_bindings = {
+local list = {
   { key = {"<CR>", "o" }, cb = tree_cb("edit") },
   { key = "<C-]>",        cb = tree_cb("cd") },
   { key = "<C-[>",        cb = tree_cb("dir_up") },
@@ -79,43 +98,34 @@ vim.g.nvim_tree_bindings = {
   { key = "g?",           cb = tree_cb("toggle_help") },
 }
 
--- default will show icon by default if no icon is provided
--- default shows no icon by default
-vim.g.nvim_tree_icons = {
-  default = "",
-  symlink = "",
-  git = {
-    -- unstaged    = "",
-    unstaged    = "★",
-    -- staged      = "",
-    staged      = "+",
-    unmerged    = "",
-    -- renamed     = "",
-    renamed     = "→",
-    -- untracked   = "",
-    -- deleted     = """,
-    untracked   = "?",
-    deleted     = "✗",
-    ignored     = "◌",
+require'nvim-tree'.setup {
+  auto_close = true,
+  open_on_setup = false,
+  open_on_tab = false,
+  diagnostics = {
+    enabled = true,
+    icons = {
+      hint    = "",
+      -- info    = "",
+      info    = "",
+      warning = "",
+      error   = "",
+    }
   },
-  folder = {
-    arrow_open      = "▾",
-    arrow_closed    = "▸",
-    -- default         = "▸",
-    -- open            = "▾",
-    default         = "",
-    open            = "",
-    empty           = "",
-    empty_open      = "",
-    symlink         = "",
-    symlink_open    = "",
+  update_focused_file = { enable = false },
+  git = { ignore = true },
+  filters = {
+    dotfiles = true,
+    custom = {
+      ".git",
+      ".cache",
+      "__pycache__",
+    }
   },
-  lsp = {
-    hint    = "",
-    -- info    = "",
-    info    = "",
-    warning = "",
-    error   = "",
-  },
+  view = {
+    side = 'left',
+    width = 30,
+    mappings = {list = list}
+  }
 }
 EOF
