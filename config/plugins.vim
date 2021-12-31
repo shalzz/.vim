@@ -14,7 +14,7 @@ Plug 'westeri/asl-vim'
 
 " Tmux
 Plug 'edkolev/tmuxline.vim'
-Plug 'andersevenrud/compe-tmux'
+Plug 'andersevenrud/cmp-tmux', { 'branch': 'compe' }
 
 " Color Schemes
 Plug 'iCyMind/NeoSolarized'
