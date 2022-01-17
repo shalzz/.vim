@@ -21,7 +21,7 @@ Plug 'iCyMind/NeoSolarized'
 
 " Solidity
 Plug 'quilt/vim-etk', { 'branch': 'main' }
-Plug 'thesis/vim-solidity'
+" Plug 'thesis/vim-solidity'
 
 " Neovim 0.5+ specific
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
