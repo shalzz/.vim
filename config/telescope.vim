@@ -1,5 +1,6 @@
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fi <cmd>Telescope git_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
@@ -100,8 +101,7 @@ end
 
 function M.find_files()
   require("telescope.builtin").fd {
-    -- find_command = { "fd", "--hidden", "--follow", "--type f" },
-    file_ignore_patterns = {"node_modules", ".pyc"},
+    find_command = { "fd", "--type", "f", "--strip-cwd-prefix" },
   }
 end
 
@@ -111,6 +111,11 @@ end
 
 function M.builtin()
   require("telescope.builtin").builtin()
+end
+
+function M.project_files()
+  local ok = pcall(require"telescope.builtin".git_files {})
+  if not ok then require"telescope.builtin".find_files {} end
 end
 
 return setmetatable({}, {
