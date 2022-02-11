@@ -12,6 +12,8 @@ Plug 'tpope/vim-fugitive' " Git support
 Plug 'tpope/vim-obsession'
 Plug 'westeri/asl-vim'
 
+Plug 'dense-analysis/ale'
+
 " Tmux
 Plug 'edkolev/tmuxline.vim'
 Plug 'andersevenrud/cmp-tmux', { 'branch': 'compe' }
